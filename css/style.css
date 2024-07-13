@@ -6,7 +6,10 @@
 body {
     padding: 0;
     margin: 0;
-font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 16px;
+    background-color: #fff;
+    line-height: 1.5;
 }
 
 /* CONTAINER */
@@ -26,15 +29,34 @@ font-family: "Open Sans", sans-serif;
     align-items: center;
 }
 
+.logo {
+    display: flex;
+}
+
+header img {
+    margin-right: 10px;
+}
+
+header h3:hover {
+    color: #DE2E54;
+}
+
+header a {
+    text-decoration: none;
+}
+
 .nav-list li a {
     text-decoration: none;
 }
 
 .nav-list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-list-text {
+    margin-right: 32px;
     font-family: Open Sans;
     font-size: 14px;
     font-weight: 700;
@@ -44,13 +66,24 @@ font-family: "Open Sans", sans-serif;
     color: rgba(34, 34, 34, 1);
 }
 
+.nav-list-text:last-child {
+    margin-right: 0;
+}
+
+.nav-list-hover:hover {
+    color: #DE2E54;
+}
+
 .link-reg {
+    padding: 12px 24px;
     text-decoration: none;
-    font-family: Open Sans Condensed;
+    text-transform: uppercase;
+    font-family: Open Sans;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 22.5px;
     letter-spacing: 2px;
+    border-radius: 8px;
     background: rgba(222, 46, 84, 1);
     color: rgba(255, 255, 255, 1);
     border: 2px solid rgba(222, 46, 84, 1)
@@ -65,10 +98,40 @@ font-family: "Open Sans", sans-serif;
 }
 
 /* SERVICES */
-.services-list li {
+.services {
+    justify-content: center;
+}
+
+.services-frame {
     display: flex;
 }
 
-.services-list-text {
-    display: flex;
+/* REGISTRATION */
+.reg-buttons {
+    background-color: rgba(14, 180, 193, 1);
+}
+
+.reg-buttons h2 {
+    color: rgba(255, 255, 255, 1);
+}
+
+.buttons {
+   text-align: center;
+}
+
+/* FOOTER */
+footer img {
+    margin-right: 10px;
+}
+
+footer h3 {
+    color: white;
+}
+
+.footer {
+    background-color: rgba(34, 34, 34, 1);
+}
+
+.footer li a {
+    color: rgba(255, 255, 255, 1);
 }
