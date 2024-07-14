@@ -39,10 +39,16 @@ header img {
 
 header h3:hover {
     color: #DE2E54;
+    opacity: 1;
+}
+
+header h3:active {
+    opacity: 0.6;
 }
 
 header a {
     text-decoration: none;
+    color: #222222;
 }
 
 .nav-list li a {
@@ -63,8 +69,9 @@ header a {
     line-height: 21px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: rgba(34, 34, 34, 1);
 }
+
+
 
 .nav-list-text:last-child {
     margin-right: 0;
@@ -72,6 +79,10 @@ header a {
 
 .nav-list-hover:hover {
     color: #DE2E54;
+}
+
+.nav-list-hover:active {
+    opacity: 0.6;
 }
 
 .link-reg {
@@ -89,12 +100,60 @@ header a {
     border: 2px solid rgba(222, 46, 84, 1)
 }
 
+.link-reg:hover {
+    background-color: white;
+    color: rgba(222, 46, 84, 1);
+}
+
+.link-reg:active {
+    background-color:  rgba(222, 46, 84, 1);
+    color: white;
+    opacity: 0.6;
+}
+
 /* HERO */
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: rgba(14, 180, 193, 1);
+    height: auto;
+}
+
+.hero-content {
+    display: block;
+    width: 500px;
+    margin-left: 170px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.hero-content p {
+    margin-bottom: 48px;
+    margin-left: 0;
+}
+
+.hero-reg {
+    padding: 12px 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    background: rgba(222, 46, 84, 1);
+    color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(222, 46, 84, 1)
+}
+
+.hero-reg:hover {
+    opacity: 0.8;
+}
+
+.hero-reg:active {
+    opacity: 0.6;
 }
 
 /* SERVICES */
@@ -102,13 +161,75 @@ header a {
     justify-content: center;
 }
 
+.services h1 {
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 56px;
+}
+
 .services-frame {
     display: flex;
+    width: 864px;
+    height: 200px;
+    margin-bottom: 80px;
 }
+
+.services-frame-margin {
+    margin-top: 25.5px;
+    margin-bottom: 25.5px;
+}
+
+.services-frame h2, p {
+    padding: 0;
+    margin: 0;
+    margin-left: 64px;
+}
+
+.services-frame h2 {
+    margin-bottom: 24px;
+}
+
+.services-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.services-reg {
+    padding: 12px 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    background: rgba(222, 46, 84, 1);
+    color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(222, 46, 84, 1)
+}
+
+.services-reg:hover {
+    background-color: white;
+    color: rgba(222, 46, 84, 1);
+}
+
+.services-reg:active {
+    background-color: rgba(222, 46, 84, 1);
+    color: white;
+    opacity: 0.6;
+}
+
 
 /* REGISTRATION */
 .reg-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: rgba(14, 180, 193, 1);
+    height: 253px;
 }
 
 .reg-buttons h2 {
@@ -117,6 +238,42 @@ header a {
 
 .buttons {
    text-align: center;
+}
+
+.buttons h2 {
+    margin: 0;
+    padding: 0;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.call-reg {
+    padding: 12px 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 1);
+    border: 2px solid white;
+}
+
+.call-reg:hover {
+    background-color: rgba(222, 46, 84, 1);
+    border: 2px solid rgba(222, 46, 84, 1);
+}
+
+.call-reg:active {
+    background-color: rgba(222, 46, 84, 1);
+    border: 2px solid rgba(222, 46, 84, 1);
+    opacity: 0.6;
+}
+
+.margin-reg {
+    margin-right: 40px;
 }
 
 /* FOOTER */
@@ -128,8 +285,31 @@ footer h3 {
     color: white;
 }
 
+footer h3:hover {
+    color: rgba(222, 46, 84, 1);
+    cursor: pointer;
+}
+
+footer h3:active {
+    color: white;
+    opacity: 0.6;
+}
+
+.footer-hover:hover {
+    color: rgba(222, 46, 84, 1);
+}
+
+.footer-hover:active {
+    color: white;
+    opacity: 0.6;
+}
+
 .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: rgba(34, 34, 34, 1);
+    height: 100px;
 }
 
 .footer li a {
